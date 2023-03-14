@@ -1,0 +1,466 @@
+
+
+============================== 2023-03-14 14:54:35.923874 | 753bbd28-0f33-48bf-8fc5-5662d059768b ==============================
+[0m14:54:35.923874 [info ] [MainThread]: Running with dbt=1.4.3
+[0m14:54:35.925876 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\junke\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m14:54:35.925876 [debug] [MainThread]: Tracking: tracking
+[0m14:54:35.950875 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016915FEBF40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016915FE8E20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016915FEADD0>]}
+[0m14:54:35.975878 [debug] [MainThread]: checksum: c7a5cda64f02d8b9dd20ef412f82fbb79fdce1bb359c3c5dae3d080de7f31bfd, vars: {}, profile: None, target: None, version: 1.4.3
+[0m14:54:35.976877 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m14:54:35.977877 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '753bbd28-0f33-48bf-8fc5-5662d059768b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016915FE85B0>]}
+[0m14:54:37.364874 [debug] [MainThread]: 1699: static parser successfully parsed example\my_first_dbt_model.sql
+[0m14:54:37.380877 [debug] [MainThread]: 1699: static parser successfully parsed example\my_second_dbt_model.sql
+[0m14:54:37.495874 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '753bbd28-0f33-48bf-8fc5-5662d059768b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000169160DA4A0>]}
+[0m14:54:37.503876 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '753bbd28-0f33-48bf-8fc5-5662d059768b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001691612E860>]}
+[0m14:54:37.503876 [info ] [MainThread]: Found 2 models, 4 tests, 0 snapshots, 0 analyses, 334 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m14:54:37.504875 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '753bbd28-0f33-48bf-8fc5-5662d059768b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001691612F880>]}
+[0m14:54:37.506880 [info ] [MainThread]: 
+[0m14:54:37.509874 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m14:54:37.513875 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_datafellowship-juan'
+[0m14:54:37.514876 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:54:37.525877 [debug] [ThreadPool]: BigQuery adapter: Got an error when attempting to create a bigquery client: 'Runtime Error
+  
+  dbt encountered an error while trying to read your profiles.yml file.
+  
+  Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+  '
+[0m14:54:37.528880 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:54:37.529880 [debug] [MainThread]: Connection 'list_datafellowship-juan' was properly closed.
+[0m14:54:37.530882 [info ] [MainThread]: 
+[0m14:54:37.532889 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 0.02 seconds (0.02s).
+[0m14:54:37.533877 [error] [MainThread]: Encountered an error:
+Database Error
+  Runtime Error
+    
+    dbt encountered an error while trying to read your profiles.yml file.
+    
+    Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+    
+[0m14:54:37.535879 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001691612E5C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016915FFC4F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016915FFE710>]}
+[0m14:54:37.536910 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-03-14 14:57:27.924408 | d2b2d024-62f6-4a24-bab2-bc1bbfa65108 ==============================
+[0m14:57:27.924408 [info ] [MainThread]: Running with dbt=1.4.3
+[0m14:57:27.928408 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\junke\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m14:57:27.928408 [debug] [MainThread]: Tracking: tracking
+[0m14:57:27.946410 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204E764AE90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204E7648A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204E764AB00>]}
+[0m14:57:27.957434 [debug] [MainThread]: checksum: c7a5cda64f02d8b9dd20ef412f82fbb79fdce1bb359c3c5dae3d080de7f31bfd, vars: {}, profile: None, target: None, version: 1.4.3
+[0m14:57:28.063408 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:57:28.064408 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:57:28.075408 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd2b2d024-62f6-4a24-bab2-bc1bbfa65108', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204E7825570>]}
+[0m14:57:28.089407 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd2b2d024-62f6-4a24-bab2-bc1bbfa65108', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204E77E1B40>]}
+[0m14:57:28.090405 [info ] [MainThread]: Found 2 models, 4 tests, 0 snapshots, 0 analyses, 334 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m14:57:28.091405 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd2b2d024-62f6-4a24-bab2-bc1bbfa65108', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204E77E1900>]}
+[0m14:57:28.094405 [info ] [MainThread]: 
+[0m14:57:28.098408 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m14:57:28.099407 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_datafellowship-juan'
+[0m14:57:28.100406 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:57:31.030742 [debug] [ThreadPool]: Acquiring new bigquery connection 'create_datafellowship-juan_chicago_taxi_trips'
+[0m14:57:31.031754 [debug] [ThreadPool]: Acquiring new bigquery connection 'create_datafellowship-juan_chicago_taxi_trips'
+[0m14:57:31.031754 [debug] [ThreadPool]: Creating schema "ReferenceKeyMsg(database='datafellowship-juan', schema='chicago_taxi_trips', identifier=None)"
+[0m14:57:31.045784 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:57:31.046783 [debug] [ThreadPool]: On create_datafellowship-juan_chicago_taxi_trips: /* {"app": "dbt", "dbt_version": "1.4.3", "profile_name": "chicago_taxi_trips", "target_name": "dev", "connection_name": "create_datafellowship-juan_chicago_taxi_trips"} */
+create schema if not exists `datafellowship-juan`.`chicago_taxi_trips`
+  
+[0m14:57:32.603682 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=datafellowship-juan&j=bq:US:2b9c5556-0e56-46af-8d9c-a2dbf3093ae2&page=queryresults
+[0m14:57:32.611888 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_datafellowship-juan_chicago_taxi_trips'
+[0m14:57:32.613887 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:57:33.166410 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd2b2d024-62f6-4a24-bab2-bc1bbfa65108', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204E77E0D00>]}
+[0m14:57:33.167468 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:57:33.168053 [info ] [MainThread]: 
+[0m14:57:33.215616 [debug] [Thread-1 (]: Began running node model.chicago_taxi_trips.my_first_dbt_model
+[0m14:57:33.216616 [info ] [Thread-1 (]: 1 of 2 START sql table model chicago_taxi_trips.my_first_dbt_model ............. [RUN]
+[0m14:57:33.218645 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.chicago_taxi_trips.my_first_dbt_model'
+[0m14:57:33.218645 [debug] [Thread-1 (]: Began compiling node model.chicago_taxi_trips.my_first_dbt_model
+[0m14:57:33.221643 [debug] [Thread-1 (]: Writing injected SQL for node "model.chicago_taxi_trips.my_first_dbt_model"
+[0m14:57:33.223614 [debug] [Thread-1 (]: Timing info for model.chicago_taxi_trips.my_first_dbt_model (compile): 2023-03-14 14:57:33.219638 => 2023-03-14 14:57:33.223614
+[0m14:57:33.223614 [debug] [Thread-1 (]: Began executing node model.chicago_taxi_trips.my_first_dbt_model
+[0m14:57:33.264613 [debug] [Thread-1 (]: Writing runtime sql for node "model.chicago_taxi_trips.my_first_dbt_model"
+[0m14:57:33.267618 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m14:57:33.267618 [debug] [Thread-1 (]: On model.chicago_taxi_trips.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.4.3", "profile_name": "chicago_taxi_trips", "target_name": "dev", "node_id": "model.chicago_taxi_trips.my_first_dbt_model"} */
+
+  
+    
+
+    create or replace table `datafellowship-juan`.`chicago_taxi_trips`.`my_first_dbt_model`
+    
+    
+    OPTIONS()
+    as (
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+    );
+  
+[0m14:57:37.002307 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=datafellowship-juan&j=bq:US:65be4d23-5087-4250-b919-d9450ed3124d&page=queryresults
+[0m14:57:37.030306 [debug] [Thread-1 (]: Timing info for model.chicago_taxi_trips.my_first_dbt_model (execute): 2023-03-14 14:57:33.224617 => 2023-03-14 14:57:37.030306
+[0m14:57:37.031308 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd2b2d024-62f6-4a24-bab2-bc1bbfa65108', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204E78CAD10>]}
+[0m14:57:37.032306 [info ] [Thread-1 (]: 1 of 2 OK created sql table model chicago_taxi_trips.my_first_dbt_model ........ [[32mCREATE TABLE (2.0 rows, 0 processed)[0m in 3.81s]
+[0m14:57:37.036598 [debug] [Thread-1 (]: Finished running node model.chicago_taxi_trips.my_first_dbt_model
+[0m14:57:37.037570 [debug] [Thread-1 (]: Began running node model.chicago_taxi_trips.my_second_dbt_model
+[0m14:57:37.038606 [info ] [Thread-1 (]: 2 of 2 START sql view model chicago_taxi_trips.my_second_dbt_model ............. [RUN]
+[0m14:57:37.041580 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.chicago_taxi_trips.my_second_dbt_model'
+[0m14:57:37.042576 [debug] [Thread-1 (]: Began compiling node model.chicago_taxi_trips.my_second_dbt_model
+[0m14:57:37.048569 [debug] [Thread-1 (]: Writing injected SQL for node "model.chicago_taxi_trips.my_second_dbt_model"
+[0m14:57:37.049571 [debug] [Thread-1 (]: Timing info for model.chicago_taxi_trips.my_second_dbt_model (compile): 2023-03-14 14:57:37.042576 => 2023-03-14 14:57:37.049571
+[0m14:57:37.049571 [debug] [Thread-1 (]: Began executing node model.chicago_taxi_trips.my_second_dbt_model
+[0m14:57:37.089572 [debug] [Thread-1 (]: Writing runtime sql for node "model.chicago_taxi_trips.my_second_dbt_model"
+[0m14:57:37.091569 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:57:37.093577 [debug] [Thread-1 (]: On model.chicago_taxi_trips.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.4.3", "profile_name": "chicago_taxi_trips", "target_name": "dev", "node_id": "model.chicago_taxi_trips.my_second_dbt_model"} */
+
+
+  create or replace view `datafellowship-juan`.`chicago_taxi_trips`.`my_second_dbt_model`
+  OPTIONS()
+  as -- Use the `ref` function to select from other models
+
+select *
+from `datafellowship-juan`.`chicago_taxi_trips`.`my_first_dbt_model`
+where id = 1;
+
+
+[0m14:57:38.681393 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=datafellowship-juan&j=bq:US:ff634608-c1f2-4e1a-8bd7-04d4908ce1d6&page=queryresults
+[0m14:57:38.688389 [debug] [Thread-1 (]: Timing info for model.chicago_taxi_trips.my_second_dbt_model (execute): 2023-03-14 14:57:37.050571 => 2023-03-14 14:57:38.688389
+[0m14:57:38.692390 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd2b2d024-62f6-4a24-bab2-bc1bbfa65108', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204E78CB280>]}
+[0m14:57:38.694389 [info ] [Thread-1 (]: 2 of 2 OK created sql view model chicago_taxi_trips.my_second_dbt_model ........ [[32mCREATE VIEW (0 processed)[0m in 1.65s]
+[0m14:57:38.698391 [debug] [Thread-1 (]: Finished running node model.chicago_taxi_trips.my_second_dbt_model
+[0m14:57:38.702390 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m14:57:38.704394 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:57:38.705386 [debug] [MainThread]: Connection 'create_datafellowship-juan_chicago_taxi_trips' was properly closed.
+[0m14:57:38.706389 [debug] [MainThread]: Connection 'list_datafellowship-juan_chicago_taxi_trips' was properly closed.
+[0m14:57:38.707389 [debug] [MainThread]: Connection 'model.chicago_taxi_trips.my_second_dbt_model' was properly closed.
+[0m14:57:38.708387 [info ] [MainThread]: 
+[0m14:57:38.710386 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 10.61 seconds (10.61s).
+[0m14:57:38.713387 [debug] [MainThread]: Command end result
+[0m14:57:38.771385 [info ] [MainThread]: 
+[0m14:57:38.786383 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:57:38.792383 [info ] [MainThread]: 
+[0m14:57:38.794384 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m14:57:38.795385 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204E793CC10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204E793C2B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204E793CD30>]}
+[0m14:57:38.797384 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-03-14 15:19:48.623468 | 34902e18-e2a0-4183-926c-b84d2f0c57d7 ==============================
+[0m15:19:48.623468 [info ] [MainThread]: Running with dbt=1.4.3
+[0m15:19:48.625469 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\junke\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'compile': True, 'which': 'generate', 'rpc_method': 'docs.generate', 'indirect_selection': 'eager'}
+[0m15:19:48.626472 [debug] [MainThread]: Tracking: tracking
+[0m15:19:48.646476 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002472F14B040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002472F148E20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002472F14ACB0>]}
+[0m15:19:48.663473 [debug] [MainThread]: checksum: c7a5cda64f02d8b9dd20ef412f82fbb79fdce1bb359c3c5dae3d080de7f31bfd, vars: {}, profile: None, target: None, version: 1.4.3
+[0m15:19:48.672473 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m15:19:48.673474 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '34902e18-e2a0-4183-926c-b84d2f0c57d7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002472F14B340>]}
+[0m15:19:49.436470 [debug] [MainThread]: 1699: static parser successfully parsed example\my_first_dbt_model.sql
+[0m15:19:49.461472 [debug] [MainThread]: 1699: static parser successfully parsed example\my_second_dbt_model.sql
+[0m15:19:49.534471 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '34902e18-e2a0-4183-926c-b84d2f0c57d7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000247302C3FA0>]}
+[0m15:19:49.541471 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '34902e18-e2a0-4183-926c-b84d2f0c57d7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000247302C3E20>]}
+[0m15:19:49.542470 [info ] [MainThread]: Found 2 models, 4 tests, 0 snapshots, 0 analyses, 334 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m15:19:49.543470 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '34902e18-e2a0-4183-926c-b84d2f0c57d7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000247302BCA00>]}
+[0m15:19:49.545503 [info ] [MainThread]: 
+[0m15:19:49.547480 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m15:19:49.549470 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_datafellowship-juan_chicago_taxi_trips'
+[0m15:19:49.550472 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:19:51.705410 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '34902e18-e2a0-4183-926c-b84d2f0c57d7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000247302BCA00>]}
+[0m15:19:51.708410 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:19:51.710413 [info ] [MainThread]: 
+[0m15:19:51.722438 [debug] [Thread-1 (]: Began running node model.chicago_taxi_trips.my_first_dbt_model
+[0m15:19:51.723409 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.chicago_taxi_trips.my_first_dbt_model'
+[0m15:19:51.724438 [debug] [Thread-1 (]: Began compiling node model.chicago_taxi_trips.my_first_dbt_model
+[0m15:19:51.731412 [debug] [Thread-1 (]: Writing injected SQL for node "model.chicago_taxi_trips.my_first_dbt_model"
+[0m15:19:51.733408 [debug] [Thread-1 (]: Timing info for model.chicago_taxi_trips.my_first_dbt_model (compile): 2023-03-14 15:19:51.725408 => 2023-03-14 15:19:51.732408
+[0m15:19:51.733408 [debug] [Thread-1 (]: Began executing node model.chicago_taxi_trips.my_first_dbt_model
+[0m15:19:51.734409 [debug] [Thread-1 (]: Timing info for model.chicago_taxi_trips.my_first_dbt_model (execute): 2023-03-14 15:19:51.734409 => 2023-03-14 15:19:51.734409
+[0m15:19:51.737409 [debug] [Thread-1 (]: Finished running node model.chicago_taxi_trips.my_first_dbt_model
+[0m15:19:51.739408 [debug] [Thread-1 (]: Began running node model.chicago_taxi_trips.my_second_dbt_model
+[0m15:19:51.741416 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.chicago_taxi_trips.my_second_dbt_model'
+[0m15:19:51.742450 [debug] [Thread-1 (]: Began compiling node model.chicago_taxi_trips.my_second_dbt_model
+[0m15:19:51.748412 [debug] [Thread-1 (]: Writing injected SQL for node "model.chicago_taxi_trips.my_second_dbt_model"
+[0m15:19:51.749408 [debug] [Thread-1 (]: Timing info for model.chicago_taxi_trips.my_second_dbt_model (compile): 2023-03-14 15:19:51.743411 => 2023-03-14 15:19:51.748412
+[0m15:19:51.750409 [debug] [Thread-1 (]: Began executing node model.chicago_taxi_trips.my_second_dbt_model
+[0m15:19:51.750409 [debug] [Thread-1 (]: Timing info for model.chicago_taxi_trips.my_second_dbt_model (execute): 2023-03-14 15:19:51.750409 => 2023-03-14 15:19:51.750409
+[0m15:19:51.752442 [debug] [Thread-1 (]: Finished running node model.chicago_taxi_trips.my_second_dbt_model
+[0m15:19:51.753408 [debug] [Thread-1 (]: Began running node test.chicago_taxi_trips.not_null_my_first_dbt_model_id.5fb22c2710
+[0m15:19:51.754406 [debug] [Thread-1 (]: Acquiring new bigquery connection 'test.chicago_taxi_trips.not_null_my_first_dbt_model_id.5fb22c2710'
+[0m15:19:51.755409 [debug] [Thread-1 (]: Began compiling node test.chicago_taxi_trips.not_null_my_first_dbt_model_id.5fb22c2710
+[0m15:19:51.780405 [debug] [Thread-1 (]: Writing injected SQL for node "test.chicago_taxi_trips.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m15:19:51.782417 [debug] [Thread-1 (]: Timing info for test.chicago_taxi_trips.not_null_my_first_dbt_model_id.5fb22c2710 (compile): 2023-03-14 15:19:51.756407 => 2023-03-14 15:19:51.782417
+[0m15:19:51.783407 [debug] [Thread-1 (]: Began executing node test.chicago_taxi_trips.not_null_my_first_dbt_model_id.5fb22c2710
+[0m15:19:51.783407 [debug] [Thread-1 (]: Timing info for test.chicago_taxi_trips.not_null_my_first_dbt_model_id.5fb22c2710 (execute): 2023-03-14 15:19:51.783407 => 2023-03-14 15:19:51.783407
+[0m15:19:51.784406 [debug] [Thread-1 (]: Finished running node test.chicago_taxi_trips.not_null_my_first_dbt_model_id.5fb22c2710
+[0m15:19:51.785406 [debug] [Thread-1 (]: Began running node test.chicago_taxi_trips.unique_my_first_dbt_model_id.16e066b321
+[0m15:19:51.786405 [debug] [Thread-1 (]: Acquiring new bigquery connection 'test.chicago_taxi_trips.unique_my_first_dbt_model_id.16e066b321'
+[0m15:19:51.786405 [debug] [Thread-1 (]: Began compiling node test.chicago_taxi_trips.unique_my_first_dbt_model_id.16e066b321
+[0m15:19:51.795406 [debug] [Thread-1 (]: Writing injected SQL for node "test.chicago_taxi_trips.unique_my_first_dbt_model_id.16e066b321"
+[0m15:19:51.796406 [debug] [Thread-1 (]: Timing info for test.chicago_taxi_trips.unique_my_first_dbt_model_id.16e066b321 (compile): 2023-03-14 15:19:51.787405 => 2023-03-14 15:19:51.796406
+[0m15:19:51.797407 [debug] [Thread-1 (]: Began executing node test.chicago_taxi_trips.unique_my_first_dbt_model_id.16e066b321
+[0m15:19:51.797407 [debug] [Thread-1 (]: Timing info for test.chicago_taxi_trips.unique_my_first_dbt_model_id.16e066b321 (execute): 2023-03-14 15:19:51.797407 => 2023-03-14 15:19:51.797407
+[0m15:19:51.798406 [debug] [Thread-1 (]: Finished running node test.chicago_taxi_trips.unique_my_first_dbt_model_id.16e066b321
+[0m15:19:51.799406 [debug] [Thread-1 (]: Began running node test.chicago_taxi_trips.not_null_my_second_dbt_model_id.151b76d778
+[0m15:19:51.799406 [debug] [Thread-1 (]: Acquiring new bigquery connection 'test.chicago_taxi_trips.not_null_my_second_dbt_model_id.151b76d778'
+[0m15:19:51.800409 [debug] [Thread-1 (]: Began compiling node test.chicago_taxi_trips.not_null_my_second_dbt_model_id.151b76d778
+[0m15:19:51.804409 [debug] [Thread-1 (]: Writing injected SQL for node "test.chicago_taxi_trips.not_null_my_second_dbt_model_id.151b76d778"
+[0m15:19:51.805409 [debug] [Thread-1 (]: Timing info for test.chicago_taxi_trips.not_null_my_second_dbt_model_id.151b76d778 (compile): 2023-03-14 15:19:51.800409 => 2023-03-14 15:19:51.805409
+[0m15:19:51.806415 [debug] [Thread-1 (]: Began executing node test.chicago_taxi_trips.not_null_my_second_dbt_model_id.151b76d778
+[0m15:19:51.807409 [debug] [Thread-1 (]: Timing info for test.chicago_taxi_trips.not_null_my_second_dbt_model_id.151b76d778 (execute): 2023-03-14 15:19:51.807409 => 2023-03-14 15:19:51.807409
+[0m15:19:51.808407 [debug] [Thread-1 (]: Finished running node test.chicago_taxi_trips.not_null_my_second_dbt_model_id.151b76d778
+[0m15:19:51.809408 [debug] [Thread-1 (]: Began running node test.chicago_taxi_trips.unique_my_second_dbt_model_id.57a0f8c493
+[0m15:19:51.809408 [debug] [Thread-1 (]: Acquiring new bigquery connection 'test.chicago_taxi_trips.unique_my_second_dbt_model_id.57a0f8c493'
+[0m15:19:51.810409 [debug] [Thread-1 (]: Began compiling node test.chicago_taxi_trips.unique_my_second_dbt_model_id.57a0f8c493
+[0m15:19:51.814408 [debug] [Thread-1 (]: Writing injected SQL for node "test.chicago_taxi_trips.unique_my_second_dbt_model_id.57a0f8c493"
+[0m15:19:51.815408 [debug] [Thread-1 (]: Timing info for test.chicago_taxi_trips.unique_my_second_dbt_model_id.57a0f8c493 (compile): 2023-03-14 15:19:51.810409 => 2023-03-14 15:19:51.815408
+[0m15:19:51.816409 [debug] [Thread-1 (]: Began executing node test.chicago_taxi_trips.unique_my_second_dbt_model_id.57a0f8c493
+[0m15:19:51.816409 [debug] [Thread-1 (]: Timing info for test.chicago_taxi_trips.unique_my_second_dbt_model_id.57a0f8c493 (execute): 2023-03-14 15:19:51.816409 => 2023-03-14 15:19:51.816409
+[0m15:19:51.817410 [debug] [Thread-1 (]: Finished running node test.chicago_taxi_trips.unique_my_second_dbt_model_id.57a0f8c493
+[0m15:19:51.818413 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:19:51.819407 [debug] [MainThread]: Connection 'list_datafellowship-juan_chicago_taxi_trips' was properly closed.
+[0m15:19:51.819407 [debug] [MainThread]: Connection 'test.chicago_taxi_trips.unique_my_second_dbt_model_id.57a0f8c493' was properly closed.
+[0m15:19:51.820405 [debug] [MainThread]: Command end result
+[0m15:19:51.827407 [info ] [MainThread]: Done.
+[0m15:19:51.990412 [debug] [MainThread]: Acquiring new bigquery connection 'generate_catalog'
+[0m15:19:51.990412 [info ] [MainThread]: Building catalog
+[0m15:19:51.991411 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:19:52.460564 [debug] [ThreadPool]: Acquiring new bigquery connection 'datafellowship-juan.information_schema'
+[0m15:19:52.485556 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:19:52.486558 [debug] [ThreadPool]: On datafellowship-juan.information_schema: /* {"app": "dbt", "dbt_version": "1.4.3", "profile_name": "chicago_taxi_trips", "target_name": "dev", "connection_name": "datafellowship-juan.information_schema"} */
+
+    with tables as (
+        select
+            project_id as table_database,
+            dataset_id as table_schema,
+            table_id as original_table_name,
+
+            concat(project_id, '.', dataset_id, '.', table_id) as relation_id,
+
+            row_count,
+            size_bytes as size_bytes,
+            case
+                when type = 1 then 'table'
+                when type = 2 then 'view'
+                else 'external'
+            end as table_type,
+
+            REGEXP_CONTAINS(table_id, '^.+[0-9]{8}$') and coalesce(type, 0) = 1 as is_date_shard,
+            REGEXP_EXTRACT(table_id, '^(.+)[0-9]{8}$') as shard_base_name,
+            REGEXP_EXTRACT(table_id, '^.+([0-9]{8})$') as shard_name
+
+        from `datafellowship-juan`.`chicago_taxi_trips`.__TABLES__
+        where (upper(dataset_id) = upper('chicago_taxi_trips'))
+    ),
+
+    table_options as (
+        select
+            concat(table_catalog, '.', table_schema, '.', table_name) as relation_id,
+            JSON_VALUE(option_value) as table_comment
+
+        from `datafellowship-juan`.`chicago_taxi_trips`.INFORMATION_SCHEMA.TABLE_OPTIONS
+        where option_name = 'description'
+    ),
+    extracted as (
+
+        select *,
+            case
+                when is_date_shard then shard_base_name
+                else original_table_name
+            end as table_name
+
+        from tables
+
+    ),
+
+    unsharded_tables as (
+
+        select
+            table_database,
+            table_schema,
+            table_name,
+            coalesce(table_type, 'external') as table_type,
+            is_date_shard,
+
+            struct(
+                min(shard_name) as shard_min,
+                max(shard_name) as shard_max,
+                count(*) as shard_count
+            ) as table_shards,
+
+            sum(size_bytes) as size_bytes,
+            sum(row_count) as row_count,
+
+            max(relation_id) as relation_id
+
+        from extracted
+        group by 1,2,3,4,5
+
+    ),
+
+    info_schema_columns as (
+
+        select
+            concat(table_catalog, '.', table_schema, '.', table_name) as relation_id,
+            table_catalog as table_database,
+            table_schema,
+            table_name,
+
+            -- use the "real" column name from the paths query below
+            column_name as base_column_name,
+            ordinal_position as column_index,
+
+            is_partitioning_column,
+            clustering_ordinal_position
+
+        from `datafellowship-juan`.`chicago_taxi_trips`.INFORMATION_SCHEMA.COLUMNS
+        where ordinal_position is not null
+
+    ),
+
+    info_schema_column_paths as (
+
+        select
+            concat(table_catalog, '.', table_schema, '.', table_name) as relation_id,
+            field_path as column_name,
+            data_type as column_type,
+            column_name as base_column_name,
+            description as column_comment
+
+        from `datafellowship-juan`.`chicago_taxi_trips`.INFORMATION_SCHEMA.COLUMN_FIELD_PATHS
+
+    ),
+
+    columns as (
+
+        select * except (base_column_name)
+        from info_schema_columns
+        join info_schema_column_paths using (relation_id, base_column_name)
+
+    ),
+
+    column_stats as (
+
+        select
+            table_database,
+            table_schema,
+            table_name,
+            max(relation_id) as relation_id,
+            max(case when is_partitioning_column = 'YES' then 1 else 0 end) = 1 as is_partitioned,
+            max(case when is_partitioning_column = 'YES' then column_name else null end) as partition_column,
+            max(case when clustering_ordinal_position is not null then 1 else 0 end) = 1 as is_clustered,
+            array_to_string(
+                array_agg(
+                    case
+                        when clustering_ordinal_position is not null then column_name
+                        else null
+                    end ignore nulls
+                    order by clustering_ordinal_position
+                ), ', '
+            ) as clustering_columns
+
+        from columns
+        group by 1,2,3
+
+    )
+
+    select
+        unsharded_tables.table_database,
+        unsharded_tables.table_schema,
+        case
+            when is_date_shard then concat(unsharded_tables.table_name, '*')
+            else unsharded_tables.table_name
+        end as table_name,
+        unsharded_tables.table_type,
+        table_options.table_comment,
+
+        -- coalesce name and type for External tables - these columns are not
+        -- present in the COLUMN_FIELD_PATHS resultset
+        coalesce(columns.column_name, '<unknown>') as column_name,
+        -- invent a row number to account for nested fields -- BQ does
+        -- not treat these nested properties as independent fields
+        row_number() over (
+            partition by relation_id
+            order by columns.column_index, columns.column_name
+        ) as column_index,
+        coalesce(columns.column_type, '<unknown>') as column_type,
+        columns.column_comment,
+
+        'Shard count' as `stats__date_shards__label`,
+        table_shards.shard_count as `stats__date_shards__value`,
+        'The number of date shards in this table' as `stats__date_shards__description`,
+        is_date_shard as `stats__date_shards__include`,
+
+        'Shard (min)' as `stats__date_shard_min__label`,
+        table_shards.shard_min as `stats__date_shard_min__value`,
+        'The first date shard in this table' as `stats__date_shard_min__description`,
+        is_date_shard as `stats__date_shard_min__include`,
+
+        'Shard (max)' as `stats__date_shard_max__label`,
+        table_shards.shard_max as `stats__date_shard_max__value`,
+        'The last date shard in this table' as `stats__date_shard_max__description`,
+        is_date_shard as `stats__date_shard_max__include`,
+
+        '# Rows' as `stats__num_rows__label`,
+        row_count as `stats__num_rows__value`,
+        'Approximate count of rows in this table' as `stats__num_rows__description`,
+        (unsharded_tables.table_type = 'table') as `stats__num_rows__include`,
+
+        'Approximate Size' as `stats__num_bytes__label`,
+        size_bytes as `stats__num_bytes__value`,
+        'Approximate size of table as reported by BigQuery' as `stats__num_bytes__description`,
+        (unsharded_tables.table_type = 'table') as `stats__num_bytes__include`,
+
+        'Partitioned By' as `stats__partitioning_type__label`,
+        partition_column as `stats__partitioning_type__value`,
+        'The partitioning column for this table' as `stats__partitioning_type__description`,
+        is_partitioned as `stats__partitioning_type__include`,
+
+        'Clustered By' as `stats__clustering_fields__label`,
+        clustering_columns as `stats__clustering_fields__value`,
+        'The clustering columns for this table' as `stats__clustering_fields__description`,
+        is_clustered as `stats__clustering_fields__include`
+
+    -- join using relation_id (an actual relation, not a shard prefix) to make
+    -- sure that column metadata is picked up through the join. This will only
+    -- return the column information for the "max" table in a date-sharded table set
+    from unsharded_tables
+    left join table_options using (relation_id)
+    left join columns using (relation_id)
+    left join column_stats using (relation_id)
+  
+[0m15:19:56.296653 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=datafellowship-juan&j=bq:US:3fe237e6-71fb-49b5-98e0-c950bc0f6581&page=queryresults
+[0m15:19:56.350638 [info ] [MainThread]: Catalog written to D:\IYKRA\DBT-HANDSON\dbt-assigment\chicago_taxi_trips\target\catalog.json
+[0m15:19:56.353081 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002473040A3E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002473040B340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024730409030>]}
+[0m15:19:56.354079 [debug] [MainThread]: Flushing usage events
+[0m15:19:58.176624 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m15:19:58.178630 [debug] [MainThread]: Connection 'datafellowship-juan.information_schema' was properly closed.
+
+
+============================== 2023-03-14 15:20:11.370998 | b863d2b9-05e6-4c90-8f00-10e8a816a50a ==============================
+[0m15:20:11.370998 [info ] [MainThread]: Running with dbt=1.4.3
+[0m15:20:11.373000 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\junke\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'port': 8080, 'open_browser': True, 'which': 'serve', 'indirect_selection': 'eager'}
+[0m15:20:11.374003 [debug] [MainThread]: Tracking: tracking
+[0m15:20:11.421002 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001181B72AB60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001181B72B190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001181B72A8F0>]}
+[0m15:20:11.424005 [info ] [MainThread]: Serving docs at 0.0.0.0:8080
+[0m15:20:11.425001 [info ] [MainThread]: To access from your browser, navigate to:  http://localhost:8080
+[0m15:20:11.426002 [info ] [MainThread]: 
+[0m15:20:11.428001 [info ] [MainThread]: 
+[0m15:20:11.429002 [info ] [MainThread]: Press Ctrl+C to exit.
+[0m15:21:05.217935 [debug] [MainThread]: Flushing usage events
+[0m15:21:06.511825 [info ] [MainThread]: ctrl-c
