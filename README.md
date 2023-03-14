@@ -1,6 +1,5 @@
 # DBT-ASSIGNMENT 
-# Juan Daniel Halomoan 
-# Assignment Session 4 :Analytics Engineering
+## Juan Daniel Halomoan - Assignment Session 4 :Analytics Engineering
 
 
 Welcome to my new dbt project!
